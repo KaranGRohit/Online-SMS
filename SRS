@@ -1,0 +1,104 @@
+
+Software Requirements Specification
+for
+School Management System
+Version 1.0 approved
+Prepared by CE104(Karan) 
+Dharamsinh Desai University(C.E Dept), Nadiad
+
+05/01/2019    Saturday
+Acronyms:
+SRS: Software requirement specification document
+SMS: School management system
+
+
+	
+	
+1. Introduction
+1.1 Purpose 
+The purpose of this SMS is to handle all students, teachers, principle and all other user’s activity regarding school can be doing totally online in a hasslefree
+Environment.
+1.2 Intended Audience 
+All users who are directly or indirectly communicating with school like students, teachers, principle, parents, accountant etc.
+1.3 Product Scope
+Scope of our system is that it works only for schools not for any other educational institutes like coaching and university, collage etc.
+1.4 Product Perspective
+This product is replacement of currently existing offline management system based on registers only. 
+1.5 Product Functions
+Our SMS is able to perform those every activities which were performed in older handy system with more functionalities.
+1.6 User Classes 
+-Student
+-Teacher
+-Principle
+-Accountant
+-Parent
+1.7 Operating Environment
+Our SMS is platform independent so you can use it with any OS environment(Mac, Windows, Linux etc).
+1.8 Design and Implementation Constraints
+Here designing is done by following UML instructions and implementation of this system is carried out by using well known web development framework: Django.
+2. External Interface Requirements
+2.1 Software Interfaces
+In SMS we are going to use sqlite database and python3 language for implementation in Django framework.
+2.2 Communications Interfaces
+Our SMS can be easily used over http protocol.
+3. System Features
+
+3.1 Description/ Functional Requirements and Priority:
+
+	(P0: highest priority task)
+	Users of System:
+
+	Note: Planning to implement till p3.
+
+	1)Student Activity:
+
+	P0. student can see his/her school result online. 
+	P1. student can see his/her class Attendance.
+	P2. student can see  his/her allocated assignment or project or timetable by teacher.
+	P3. student can see timetable.
+	P4. student can generate  his/her fee-reciept.
+	P5. new student can apply for admission to the school.
+	
+	2)Teacher Activity:
+	
+	P0. teacher can see any student's information of his class.  
+	P1. teacher can upload student's marks and generate result.
+	P2. teacher can upload student's attendance.
+	P3. teacher can upload student assignment/project online.
+	P4. teacher can organize a PTM(parent teacher meeting) via notice. 
+	
+	
+	3)Principal Activity(Admin):
+	
+	P0. principal can enroll new students and hire new teacher.
+	P1. principal can see any student's or teacher's information.
+	P2. principal can assign classes and subjects to teachers.
+	P3. principal can decide rules for school and push it to the notice board.
+	P4. principal can generate timetable for class and push it to the notice board.
+
+
+	4)Parents Activity:
+
+	P0. Parents can view student result as well as attendance.
+	P1. Parents can view notices published by principle/teachers.
+ 
+	
+	5)Accountant Activity:
+
+	P0. Accountant can accept student fees.
+	P1. Accountant can generate salary cheques for teachers/principle.
+
+	
+4. Other Nonfunctional Requirements
+4.1 Availability
+The system should available for 24 hours per 6 days.
+4.2 Certification
+Our SMS is certified from ISO for Best Software of the Year.
+
+
+4.3 Capacity
+Our SMS is having a capacity of storing 1000 students records online.
+4.4 Durability
+Our SMS is durable to sustain about 5 years.
+4.5 Documentation
+Our SMS user documentation is provided in a hard as well as soft copy to the end user made by developers.
