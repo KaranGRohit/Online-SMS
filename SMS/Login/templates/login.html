@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+     {% block content %}
+	{% if form.errors %}
+		<p class="error"> Invalid Username or Password </p>
+	{% endif %}
+	<form  action="/login/auth/" method = "post">{% csrf_token %}
+		<div class="form" align="center">
+			<div class="row">
+				<h2><label for="username"> UserName:</label></h2>
+				<input type="text" name = "username" value = "" id="username">
+			</div>
+			<div class="row">
+				<h2><label for="password"> Password:</label></h2>
+<input type="password" name="password" value="" id="password">
+			</div>
+			<div class="row buttons">
+				<input type="submit" value="login" class="btn"/>
+			</div>
+		</div>
+	</form>
+      {% endblock %}

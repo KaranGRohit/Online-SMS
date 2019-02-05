@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	{% if form.errors %}
+		<p class="error"> Invalid Student info </p>
+	{% endif %}
+
+	<form action="addstudentinfo/" method = "post">{% csrf_token %}
+		<label for="sfname">First Name : </label>
+		<input type="text" name = "sfname" value = "" id="sfname">
+		<label for="slname">Last Name : </label>
+		<input type="text" name = "slname" value = "" id="slname">
+		<label for="saddr">Address : </label>
+		<input type="text" name = "saddr" value = "" id="saddr">
+		<label for="semail">Email-id : </label>
+		<input type="text" name = "semail" value = "" id="semail">
+		<label for="sclass">Class : </label>
+		<input type="text" name = "sclass" value = "" id="sclass">
+		<input type="submit" value="Enter"/>
+	</form>
+	<p> Click <a href="/Student_App/students/"></a> to view student records. </p>
+{% endblock %}
